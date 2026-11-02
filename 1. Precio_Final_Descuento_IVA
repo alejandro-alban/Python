@@ -1,0 +1,10 @@
+precio = float(input("Ingrese el precio original: "))
+
+descuento = precio * 0.20
+precio_descuento = precio - descuento
+
+iva = precio_descuento * 0.15
+precio_final = precio_descuento + iva
+
+print("Precio con descuento:", precio_descuento)
+print("Precio final con IVA:", precio_final)
