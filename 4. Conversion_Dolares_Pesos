@@ -1,0 +1,6 @@
+dolares = float(input("Ingrese la cantidad en dolares: "))
+cambio = float(input("Ingrese el tipo de cambio: "))
+
+pesos = dolares * cambio
+
+print("La cantidad en pesos mexicanos es:", pesos)
