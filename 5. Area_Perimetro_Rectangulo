@@ -1,0 +1,8 @@
+largo = float(input("Ingrese el largo: "))
+ancho = float(input("Ingrese el ancho: "))
+
+area = largo * ancho
+perimetro = 2 * (largo + ancho)
+
+print("El area es:", area)
+print("El perimetro es:", perimetro)
