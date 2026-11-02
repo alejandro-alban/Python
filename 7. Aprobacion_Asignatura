@@ -1,0 +1,6 @@
+promedio = float(input("Ingrese el promedio final: "))
+
+if promedio >= 7:
+    print("APRUEBA")
+else:
+    print("NO APRUEBA")
