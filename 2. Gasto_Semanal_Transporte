@@ -1,0 +1,7 @@
+viajes = int(input("Ingrese los viajes por dia: "))
+costo = float(input("Ingrese el costo del pasaje: "))
+dias = int(input("Ingrese los dias por semana: "))
+
+gasto = viajes * costo * dias
+
+print("El gasto semanal es: $", gasto)
