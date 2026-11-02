@@ -1,0 +1,15 @@
+n = int(input("Ingrese la cantidad de estudiantes: "))
+
+aprobados = 0
+reprobados = 0
+
+for i in range(1, n + 1):
+    nota = float(input("Ingrese la nota del estudiante: "))
+
+    if nota >= 7:
+        aprobados = aprobados + 1
+    else:
+        reprobados = reprobados + 1
+
+print("Cantidad de aprobados:", aprobados)
+print("Cantidad de reprobados:", reprobados)
