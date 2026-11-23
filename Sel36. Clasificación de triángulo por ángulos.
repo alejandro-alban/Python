@@ -1,0 +1,13 @@
+a = float(input("Ingrese el primer ángulo: "))
+b = float(input("Ingrese el segundo ángulo: "))
+c = float(input("Ingrese el tercer ángulo: "))
+
+if a > 0 and b > 0 and c > 0 and a + b + c == 180:
+    if a == 90 or b == 90 or c == 90:
+        print("Triángulo rectángulo")
+    elif a > 90 or b > 90 or c > 90:
+        print("Triángulo obtusángulo")
+    else:
+        print("Triángulo acutángulo")
+else:
+    print("Los ángulos no forman un triángulo")
