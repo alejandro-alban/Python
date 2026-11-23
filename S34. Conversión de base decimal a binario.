@@ -1,0 +1,14 @@
+numero = int(input("Ingrese un número decimal: "))
+n = numero
+binario = ""
+
+if n == 0:
+    binario = "0"
+else:
+    while n > 0:
+        residuo = n % 2
+        binario = str(residuo) + binario
+        print(n, "/ 2 =", n // 2, "Residuo:", residuo)
+        n = n // 2
+
+print("Número binario:", binario)
