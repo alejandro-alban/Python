@@ -1,0 +1,12 @@
+a = float(input("Ingrese el primer dato: "))
+b = float(input("Ingrese el segundo dato: "))
+c = float(input("Ingrese el tercer dato: "))
+d = float(input("Ingrese el cuarto dato: "))
+
+producto = a * b * c * d
+suma = a + b + c + d
+media = suma / 4
+
+print("Producto:", producto)
+print("Suma:", suma)
+print("Media aritmética:", media)
