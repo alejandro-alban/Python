@@ -1,0 +1,12 @@
+N = int(input("Ingrese N: "))
+
+cantidad = 0
+suma = 0
+
+for i in range(1, N + 1):
+    if i % 3 == 0 or i % 5 == 0:
+        cantidad = cantidad + 1
+        suma = suma + i
+
+print("Cantidad de múltiplos:", cantidad)
+print("Suma de múltiplos:", suma)
