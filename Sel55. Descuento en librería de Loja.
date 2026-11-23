@@ -1,0 +1,16 @@
+estudiante = input("¿Es estudiante UTPL? (S/N): ").upper()
+compra = float(input("Ingrese el monto de compra: "))
+
+if estudiante == "S":
+    descuento = 20
+    if compra > 30:
+        descuento += 5
+else:
+    descuento = 0
+    if compra > 50:
+        descuento = 10
+
+total = compra - (compra * descuento / 100)
+
+print("Descuento aplicado:", descuento, "%")
+print("Monto final a pagar:", total)
