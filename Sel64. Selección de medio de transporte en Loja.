@@ -1,0 +1,23 @@
+print("MEDIOS DE TRANSPORTE")
+print("1. Bus urbano")
+print("2. Taxi")
+print("3. Bicicleta")
+print("4. Caminar")
+
+opcion = int(input("Seleccione un medio de transporte: "))
+
+match opcion:
+    case 1:
+        print("Tiempo estimado: 20 minutos")
+        print("Transporte público")
+    case 2:
+        print("Tiempo estimado: 12 minutos")
+        print("Transporte rápido")
+    case 3:
+        print("Tiempo estimado: 25 minutos")
+        print("Transporte ecológico")
+    case 4:
+        print("Tiempo estimado: 60 minutos")
+        print("Actividad saludable")
+    case _:
+        print("Opción inválida")
