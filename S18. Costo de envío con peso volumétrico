@@ -1,0 +1,13 @@
+pesoReal = float(input("Ingrese el peso real: "))
+largo = float(input("Ingrese el largo: "))
+ancho = float(input("Ingrese el ancho: "))
+alto = float(input("Ingrese el alto: "))
+
+pesoVolumetrico = (largo * ancho * alto) / 5000
+
+pesoCobrar = max(pesoReal, pesoVolumetrico)
+costo = pesoCobrar * 2.50
+
+print("Peso volumétrico:", pesoVolumetrico)
+print("Peso a cobrar:", pesoCobrar)
+print("Costo total:", costo)
