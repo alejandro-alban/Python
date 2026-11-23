@@ -1,0 +1,14 @@
+estudiante = input("¿Es estudiante? (S/N): ").upper()
+carnet = input("¿Tiene carné vigente? (S/N): ").upper()
+autorizacion = input("¿Tiene autorización especial? (S/N): ").upper()
+
+if estudiante == "S":
+    if carnet == "S":
+        print("Acceso permitido")
+    else:
+        print("Acceso denegado")
+else:
+    if autorizacion == "S":
+        print("Ingreso temporal")
+    else:
+        print("Acceso denegado")
