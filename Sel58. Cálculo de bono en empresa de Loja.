@@ -1,0 +1,18 @@
+antiguedad = int(input("Ingrese los años de antigüedad: "))
+sueldo = float(input("Ingrese el sueldo: "))
+excelente = input("¿Tiene evaluación excelente? (S/N): ").upper()
+
+if antiguedad > 2:
+    bono = sueldo * 0.10
+    if excelente == "S":
+        bono += sueldo * 0.05
+else:
+    bono = 0
+    if antiguedad < 2:
+        if excelente == "S":
+            bono = sueldo * 0.05
+
+total = sueldo + bono
+
+print("Valor del bono:", bono)
+print("Sueldo total:", total)
