@@ -1,0 +1,12 @@
+km = float(input("Ingrese los kilómetros recorridos: "))
+noche = input("¿Es de noche? (S/N): ").upper()
+
+total = 2 + (1.50 * km)
+
+if km > 10:
+    total = total * 1.20
+
+if noche == "S":
+    total = total * 1.30
+
+print("Total a pagar: $", total)
