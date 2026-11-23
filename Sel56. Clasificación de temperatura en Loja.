@@ -1,0 +1,12 @@
+temperatura = float(input("Ingrese la temperatura: "))
+
+if temperatura < 15:
+    print("Clasificación: Frío")
+else:
+    if temperatura <= 25:
+        print("Clasificación: Templado")
+    else:
+        print("Clasificación: Cálido")
+
+        if temperatura > 30:
+            print("Alerta: Calor extremo")
