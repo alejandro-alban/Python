@@ -1,0 +1,33 @@
+dia = int(input("Ingrese un número del 1 al 7: "))
+
+match dia:
+    case 1:
+        nombre = "Lunes"
+        actividad = "Día de clases"
+    case 2:
+        nombre = "Martes"
+        actividad = "Día de clases"
+    case 3:
+        nombre = "Miércoles"
+        actividad = "Día de clases"
+    case 4:
+        nombre = "Jueves"
+        actividad = "Día de clases"
+    case 5:
+        nombre = "Viernes"
+        actividad = "Día de clases"
+    case 6:
+        nombre = "Sábado"
+        actividad = "Fin de semana"
+    case 7:
+        nombre = "Domingo"
+        actividad = "Fin de semana"
+    case _:
+        nombre = "Número inválido"
+        actividad = ""
+
+if dia >= 1 and dia <= 7:
+    print("Día:", nombre)
+    print("Tipo:", actividad)
+else:
+    print(nombre)
