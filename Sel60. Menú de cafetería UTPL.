@@ -1,0 +1,19 @@
+print("MENÚ DE CAFETERÍA")
+print("1. Café - $1.50")
+print("2. Jugo - $1.20")
+print("3. Sandwich - $2.50")
+print("4. Salir")
+
+opcion = int(input("Seleccione una opción: "))
+
+match opcion:
+    case 1:
+        print("Café: $1.50")
+    case 2:
+        print("Jugo: $1.20")
+    case 3:
+        print("Sandwich: $2.50")
+    case 4:
+        print("Gracias por visitarnos")
+    case _:
+        print("Opción inválida")
