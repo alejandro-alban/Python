@@ -1,0 +1,9 @@
+import math
+
+radio = float(input("Ingrese el radio: "))
+
+longitud = 2 * math.pi * radio
+area = math.pi * radio ** 2
+
+print("Longitud de la circunferencia:", longitud)
+print("Área del círculo:", area)
