@@ -1,0 +1,32 @@
+total = 0
+dias = 0
+superiores = 0
+mayor = 0
+diaMayor = 0
+
+while True:
+    venta = float(input("Ingrese la venta del día (-1 para terminar): "))
+
+    if venta == -1:
+        break
+
+    dias += 1
+    total += venta
+
+    if venta > 500:
+        superiores += 1
+
+    if dias == 1 or venta > mayor:
+        mayor = venta
+        diaMayor = dias
+
+if dias > 0:
+    promedio = total / dias
+
+    print("Total de ventas:", total)
+    print("Promedio de ventas:", promedio)
+    print("Días con ventas superiores a $500:", superiores)
+    print("Mayor venta:", mayor)
+    print("Día de la mayor venta:", diaMayor)
+else:
+    print("No se ingresaron ventas.")
