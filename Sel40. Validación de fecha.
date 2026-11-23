@@ -1,0 +1,21 @@
+dia = int(input("Ingrese el día: "))
+mes = int(input("Ingrese el mes: "))
+anio = int(input("Ingrese el año: "))
+
+if mes >= 1 and mes <= 12 and anio > 0:
+    if mes == 2:
+        if anio % 400 == 0 or (anio % 4 == 0 and anio % 100 != 0):
+            max_dias = 29
+        else:
+            max_dias = 28
+    elif mes == 4 or mes == 6 or mes == 9 or mes == 11:
+        max_dias = 30
+    else:
+        max_dias = 31
+
+    if dia >= 1 and dia <= max_dias:
+        print("Fecha válida")
+    else:
+        print("Fecha no válida")
+else:
+    print("Fecha no válida")
