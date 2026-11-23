@@ -1,0 +1,19 @@
+monto = float(input("Ingrese el monto de compra: "))
+cliente = input("¿Es cliente frecuente? (S/N): ")
+
+if monto >= 500:
+    descuento = 15
+elif monto >= 300:
+    descuento = 10
+elif monto >= 100:
+    descuento = 5
+else:
+    descuento = 0
+
+if cliente.upper() == "S":
+    descuento = descuento + 5
+
+total = monto - (monto * descuento / 100)
+
+print("Descuento aplicado:", descuento, "%")
+print("Total a pagar:", total)
