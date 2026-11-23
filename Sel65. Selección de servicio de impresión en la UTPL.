@@ -1,0 +1,25 @@
+print("SERVICIO DE IMPRESIÓN")
+print("1. Blanco y negro - $0.05")
+print("2. A color - $0.15")
+print("3. Fotocopia - $0.03")
+print("4. Salir")
+
+opcion = int(input("Seleccione una opción: "))
+
+match opcion:
+    case 1:
+        paginas = int(input("Ingrese la cantidad de páginas: "))
+        total = paginas * 0.05
+        print("Total a pagar: $", total)
+    case 2:
+        paginas = int(input("Ingrese la cantidad de páginas: "))
+        total = paginas * 0.15
+        print("Total a pagar: $", total)
+    case 3:
+        paginas = int(input("Ingrese la cantidad de páginas: "))
+        total = paginas * 0.03
+        print("Total a pagar: $", total)
+    case 4:
+        print("Gracias por utilizar el servicio")
+    case _:
+        print("Opción inválida")
