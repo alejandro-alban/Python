@@ -1,0 +1,14 @@
+numero = int(input("Ingrese un número de tres dígitos: "))
+
+original = numero
+suma = 0
+
+while numero > 0:
+    digito = numero % 10
+    suma = suma + digito**3
+    numero = numero // 10
+
+if suma == original:
+    print("Es un número Armstrong")
+else:
+    print("No es un número Armstrong")
