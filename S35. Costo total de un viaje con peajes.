@@ -1,0 +1,19 @@
+distancia = float(input("Ingrese la distancia (km): "))
+consumo = float(input("Ingrese el consumo (km/l): "))
+precio = float(input("Ingrese el precio del combustible: "))
+peajes = int(input("Ingrese el número de peajes: "))
+
+costo_peaje = 0
+
+for i in range(peajes):
+    costo = float(input("Ingrese el costo del peaje: "))
+    costo_peaje = costo_peaje + costo
+
+litros = distancia / consumo
+costo_combustible = litros * precio
+total = costo_combustible + costo_peaje
+
+print("Litros necesarios:", litros)
+print("Costo de combustible:", costo_combustible)
+print("Costo de peajes:", costo_peaje)
+print("Costo total:", total)
