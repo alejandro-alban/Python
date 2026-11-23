@@ -1,0 +1,9 @@
+capital = float(input("Ingrese el capital: "))
+tasa = float(input("Ingrese la tasa anual: "))
+meses = int(input("Ingrese el número de meses: "))
+
+interes = capital * tasa * (meses / 12)
+cuota = (capital + interes) / meses
+
+print("Interés total:", interes)
+print("Cuota mensual:", cuota)
